@@ -35,5 +35,7 @@
         
 Link to Solution in Google Colab: https://colab.research.google.com/drive/1tJ4wS23lLOmjzBAt0qlaXUltxDy19PjN
 
+Link to Notebook in Github: https://github.com/ak112/TSAI-EVA8.0/blob/master/03_Architecture_Basics/Architectural_Basics.ipynb
+
 
 
