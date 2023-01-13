@@ -25,7 +25,7 @@
     20. Batch Size, and effects of batch size
     21. etc (you can add more if we missed it here)
 
-### Requirements and Constraints for building network
+### Requirements and Constraints for building network:
 2.  Refer to this code:  [COLABLINK (links to an external site)](https://colab.research.google.com/drive/1uJZvJdi5VprOQHROtJIHy0mnY2afjNlx)
     -  **WRITE IT AGAIN SUCH THAT IT ACHIEVES**  
         1.  99.4% validation accuracy
