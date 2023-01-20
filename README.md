@@ -13,3 +13,7 @@ This contains the solutions to the assignments given in The School of AI - Exten
 5. [Architecture Basics](https://github.com/ak112/TSAI-EVA8.0/blob/master/03_Architecture_Basics/README.md)
    
    Here we were required to train MNIST to achieve 99.4% accuracy with given constraints.
+   
+6. [Coding Drill](https://github.com/ak112/TSAI-EVA8.0/blob/master/04_CodingDrillDown/README.md)
+
+   This was very important to realise the basic steps required to make a neural network and then go on to optimize it, to get the perfect model size and accuracy, very      important, please see its documentation, and all the notebooks
