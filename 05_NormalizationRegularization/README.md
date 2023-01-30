@@ -19,3 +19,16 @@
         - add all your graphs  
         - your 3 collection-of-misclassified-images  
     6. Upload your complete assignment on GitHub and share the link on LMS  
+    
+ ## Solution
+The purpose of this code is to investigate the effect of different normalisation techniques and L1 regularisation on a CNN model trained on the MNIST dataset. It has the following characteristics:
+
+a) To load the MNIST dataset, use Data Loaders.
+
+b) A modularized model that allows you to choose the type of normalisation to use: batch normalisation (BN), group normalisation (GN), or layer normalisation (LN).
+
+c) A function is defined for plotting misclassified images in order to better understand the model's performance in each of the three normalizations.
+
+d) Plots to depict training and testing loss and accuracy during the training process.
+
+Link to Notebook: https://colab.research.google.com/drive/1UKdapnaA_Q4zXWNjVVNHOJKnagVDsyAa
