@@ -32,3 +32,14 @@ c) A function is defined for plotting misclassified images in order to better un
 d) Plots to depict training and testing loss and accuracy during the training process.
 
 Link to Notebook: https://colab.research.google.com/drive/1UKdapnaA_Q4zXWNjVVNHOJKnagVDsyAa
+
+### Misclassified-images 
+
+#### 1. Network with Group Normalization
+![GN](https://github.com/ak112/TSAI-EVA8.0/blob/master/05_NormalizationRegularization/plots/misclassified_images_GN.png)
+
+#### 2. Network with Layer Normalization 
+![LN](https://github.com/ak112/TSAI-EVA8.0/blob/master/05_NormalizationRegularization/plots/misclassified_images_LN.png)
+
+#### 3. Network with L1 + BN  
+![BN](https://github.com/ak112/TSAI-EVA8.0/blob/master/05_NormalizationRegularization/plots/misclassified_images_L1%2BBN.png)
