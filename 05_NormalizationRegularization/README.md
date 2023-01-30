@@ -43,3 +43,10 @@ Link to Notebook: https://colab.research.google.com/drive/1UKdapnaA_Q4zXWNjVVNHO
 
 #### 3. Network with L1 + BN  
 ![BN](https://github.com/ak112/TSAI-EVA8.0/blob/master/05_NormalizationRegularization/plots/misclassified_images_L1%2BBN.png)
+
+
+### Training and Test Loss
+![LossGraph](https://github.com/ak112/TSAI-EVA8.0/blob/master/05_NormalizationRegularization/plots/training_test_loss.png)
+
+### Training and Test Accuracy
+![AccuracyGraph](https://github.com/ak112/TSAI-EVA8.0/blob/master/05_NormalizationRegularization/plots/training_test_acc.png)  
