@@ -8,7 +8,7 @@ def normalizationFx(method, out_channels):
     if method =='BN':
         return nn.BatchNorm2d(out_channels)
     else:
-        group = 4 if method == 'GN' else 1
+        group = 5 if method == 'GN' else 1
         return nn.GroupNorm(group, out_channels)
 
 
