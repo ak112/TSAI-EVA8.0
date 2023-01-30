@@ -13,7 +13,7 @@ def normalizationFx(method, out_channels):
 
 
 class Net(nn.Module):
-    def __init__(self, normalizatioMethod='BN'):
+    def __init__(self, normalizationMethod='BN'):
         super(Net, self).__init__()
         # Input Convolution Block
         self.convblock1 = nn.Sequential(
