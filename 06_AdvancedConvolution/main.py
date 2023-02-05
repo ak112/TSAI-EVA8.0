@@ -9,10 +9,10 @@ class train:
         self.train_acc    = []
 
     # Training
-    def execute(self,net, device, trainloader, optimizer, criterion,epoch):
+    def execute(self,model, device, trainloader, optimizer, criterion,epoch):
 
         #print('Epoch: %d' % epoch)
-        net.train()
+        model.train()
         train_loss = 0
         correct = 0
         #total = 0
@@ -30,7 +30,7 @@ class train:
             # Because of this, when you start your training loop, ideally you should zero out the gradients so that you do the parameter update correctly.
 
             # Predict
-            outputs = net(inputs)
+            outputs = model(inputs)
 
             # Calculate loss
             loss = criterion(outputs, targets)
@@ -57,16 +57,16 @@ class test:
         self.test_losses = []
         self.test_acc    = []
 
-    def execute(self, net, device, testloader, criterion):
+    def execute(self, model, device, testloader, criterion):
 
-        net.eval()
+        model.eval()
         test_loss = 0
         correct = 0
         total = 0
         with torch.no_grad():
             for batch_idx, (inputs, targets) in enumerate(testloader):
                 inputs, targets = inputs.to(device), targets.to(device)
-                outputs = net(inputs)
+                outputs = model(inputs)
                 loss = criterion(outputs, targets)
 
                 test_loss += loss.item()
