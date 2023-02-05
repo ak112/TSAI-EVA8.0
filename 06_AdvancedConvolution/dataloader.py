@@ -1,4 +1,4 @@
-import torch                   #PyTorch base libraries
+import torch
 from torchvision import datasets, transforms
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,7 +14,6 @@ class album_Compose_train():
         self.albumentations_transform = Compose([
             HorizontalFlip(),
             ShiftScaleRotate(),
-#            Cutout(num_holes=1, max_h_size=8, max_w_size=8, fill_value=[0.4914*255, 0.4822*255, 0.4471*255], always_apply=True, p=1.00),
             CoarseDropout(max_holes=3, max_height=8, max_width=8, min_holes=None, min_height=4, min_width=4, fill_value=[0.4914*255, 0.4822*255, 0.4471*255], mask_fill_value=None, always_apply=False, p=0.7),
             Normalize(mean=[0.4914, 0.4822, 0.4471],std=[0.2469, 0.2433, 0.2615]),
             ToTensorV2()
@@ -43,7 +42,6 @@ class dataset_cifar10:
 
     def __init__(self, batch_size=128):
 
-        # Defining CUDA
         cuda = torch.cuda.is_available()
         print("CUDA availability ?",cuda)
 
@@ -56,21 +54,17 @@ class dataset_cifar10:
 
     def data(self, train_flag):
 
-        # Transformations data augmentation (only for training)
         if train_flag :
             return datasets.CIFAR10('./Data',
                             train=train_flag,
                             transform=album_Compose_train(),
                             download=True)
-
-        # Testing transformation - normalization adder
         else:
             return datasets.CIFAR10('./Data',
                                 train=train_flag,
                                 transform=album_Compose_test(),
                                 download=True)
 
-    # Dataloader function
     def loader(self, train_flag=True):
         return(torch.utils.data.DataLoader(self.data(train_flag), **self.dataloaders_args))
 
