@@ -2,9 +2,6 @@ import torch
 from torchvision import datasets, transforms
 import numpy as np
 import matplotlib.pyplot as plt
-import os
-
-import cv2
 
 from albumentations import Compose, PadIfNeeded, RandomCrop, Normalize, HorizontalFlip, ShiftScaleRotate, CoarseDropout
 from albumentations.pytorch.transforms import ToTensorV2
