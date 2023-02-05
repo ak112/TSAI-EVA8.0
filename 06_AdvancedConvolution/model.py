@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 
 class Cifar10Net(nn.Module):
-    def __init__(self, num_classes=10):
+    def __init__(self):
         super(Cifar10Net, self).__init__()
         self.conv1 = nn.Sequential(
             nn.Conv2d(3, 32, 3, stride=2, padding=1,bias=False),
@@ -45,7 +45,7 @@ class Cifar10Net(nn.Module):
             nn.AdaptiveAvgPool2d((1, 1))
         )
 
-        self.fc = nn.Linear(64, num_classes)
+        self.fc = nn.Linear(64,10)
 
     def forward(self, x):
         x = F.relu(self.conv1(x))
