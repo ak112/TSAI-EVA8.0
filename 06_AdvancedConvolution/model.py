@@ -38,7 +38,6 @@ class Cifar10Net(nn.Module):
             nn.Conv2d(64, 64, 3, stride=1, dilation=2, padding=2,bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(64),
-            nn.Dropout(0.1),
         )
 
         self.gap = nn.Sequential (
