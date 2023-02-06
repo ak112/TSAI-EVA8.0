@@ -10,17 +10,17 @@ class Cifar10Net(nn.Module):
             nn.Conv2d(3, 128, 5, stride=1, padding=2, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(128),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
 
             nn.Conv2d(128, 64, 3, stride=1, padding=1, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(64),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
 
             nn.Conv2d(64, 32, 3, stride=1, padding=1, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(32),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
         )
 
         self.conv2 = nn.Sequential(
@@ -28,19 +28,19 @@ class Cifar10Net(nn.Module):
             nn.Conv2d(32, 32, 3, dilation=2, stride=2, padding=2, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(32),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
 
             nn.Conv2d(32, 64, 3, stride=1, padding=1, groups=32, bias=False),
             nn.Conv2d(64, 32, 1, stride=1, padding=0, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(32),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
 
             nn.Conv2d(32, 64, 3, stride=1, padding=1, groups=32, bias=False),
             nn.Conv2d(64, 32, 1, stride=1, padding=0, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(32),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
         )
 
         self.conv3 = nn.Sequential(
@@ -48,17 +48,17 @@ class Cifar10Net(nn.Module):
             nn.Conv2d(32, 32, 3, stride=2, padding=2, dilation=2, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(32),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
 
             nn.Conv2d(32, 32, 3, stride=1, padding=2, dilation=2, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(32),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
 
             nn.Conv2d(32, 32, 3, stride=1, padding=1, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(32),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
         )
 
         self.conv4 = nn.Sequential(
@@ -66,13 +66,13 @@ class Cifar10Net(nn.Module):
             nn.Conv2d(32, 32, 3, stride=2, padding=2, dilation=2, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(32),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
 
             nn.Conv2d(32, 64, 3, stride=1, padding=1, groups=32, bias=False),
             nn.Conv2d(64, 32, 1, stride=1, padding=0, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(32),
-            nn.Dropout(0.1),
+            nn.Dropout(0.05),
 
             nn.Conv2d(32, 10, 3, stride=1, padding=1, bias=False),
 
