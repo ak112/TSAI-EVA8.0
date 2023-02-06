@@ -23,4 +23,6 @@ A ConvNet architecture for the CIFAR-10 dataset classification task is designed.
    * The final block, "gap", is a global average pooling layer (AvgPool2d) with a kernel size of 3.
    * The output of the final block is reshaped into a vector with a size of 10 and passed through a log_softmax activation to get     the  final class scores for the 10 classes of the CIFAR-10 dataset.
 
-For the purpose of augmenting the images we have used albumentations library. The network architecture created utilizes 159,552 params. The network was trained for 150 epochs and achieved the desired accuracy of 85%.
+For the purpose of augmenting the images we have used albumentations library. The network architecture created utilizes 159,552 params. The network was trained for 150 epochs and achieved an accuracy of 84.94%. The accuracy was consistently above 84% in the last 17 epochs.
+
+The next task is to optimize the architecture in such a way that it achieves 85% accuracy in less number of epochs.
