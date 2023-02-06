@@ -21,3 +21,7 @@ This contains the solutions to the assignments given in The School of AI - Exten
 7. [Normalization Regularization](https://github.com/ak112/TSAI-EVA8.0/blob/master/05_NormalizationRegularization/README.md)
     
     This assigment focuses on the importance of normalization and regularization in neural networks.
+
+8. [Advanced Convolution](https://github.com/ak112/TSAI-EVA8.0/blob/master/06_AdvancedConvolution/README.md)
+
+   Here I implemented various convolution types in a network architecture including standard convolution layers, depthwise separable convolution layers and dilated convolution layers with standard operations of Batch Normalization, Dropout and ReLU activations functions. The max pooling was replaced by 3 3x3 layers with stride of 2 instead. Thr network utilized 159,552 params and achieved an accuracy of 84.94% in 150 epochs.
