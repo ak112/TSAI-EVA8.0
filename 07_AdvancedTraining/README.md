@@ -59,9 +59,12 @@ The ResNet18 model was trained on the CIFAR10 dataset for 20 epochs.
 ![loss_graph](./plots/training_test_loss.png)
 ![accuracy_graph](./plots/training_test_accuracy.png)
 
+
 **Gallery of 10 misclassified images**
+
 ![misclassified_images](./plots/misclassified_images.png)
 
 **GradCam outputs on misclassified images**
+
 ![misclassified_GradCam](./plots/missclassified_images_GradCam.png)
-)
+
