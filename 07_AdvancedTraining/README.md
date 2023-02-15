@@ -46,8 +46,22 @@
     5. Copy-paste the 10/20 Misclassified Images Gallery  
     6. Copy-paste the 10/20 GradCam outputs Gallery  
     7. Share the link to your MAIN repo  
-    8. Share the link to your README of Assignment 7 (cannot be in the MAIN Repo, but Assignment 8 repo)  
+    8. Share the link to your README of Assignment 7 (cannot be in the MAIN Repo, but Assignment 7 repo)  
 
 
 ## Solution
 Refer to the following GitHub Link to access the pytorch-main-eva8 that has been used to train/test the model.(https://github.com/ak112/pytorch-main-eva8)
+
+## Model training and Results
+The ResNet18 model was trained on the CIFAR10 dataset for 20 epochs. 
+
+**Loss curves**:  
+![loss_graph](./plots/training_test_loss.png)
+![accuracy_graph](./plots/training_test_accuracy.png)
+
+**Gallery of 10 misclassified images**
+![misclassified_images](.plots/misclassified_images.png)
+
+**GradCam outputs on misclassified images**
+![misclassified_GradCam](./plots/missclassified_images_GradCam.png)
+)
