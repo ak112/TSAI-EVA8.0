@@ -24,4 +24,8 @@ This contains the solutions to the assignments given in The School of AI - Exten
 
 8. [Advanced Convolution](https://github.com/ak112/TSAI-EVA8.0/blob/master/06_AdvancedConvolution/README.md)
 
-   Here I implemented various convolution types in a network architecture including standard convolution layers, depthwise separable convolution layers and dilated convolution layers with standard operations of Batch Normalization, Dropout and ReLU activations functions. The max pooling was replaced by 3 3x3 layers with stride of 2 instead. Thr network utilized 159,552 params and achieved an accuracy of 84.94% in 150 epochs.
+   Here I implemented various convolution types in a network architecture including standard convolution layers, depthwise separable convolution layers and dilated          convolution layers with standard operations of Batch Normalization, Dropout and ReLU activations functions. The max pooling was replaced by 3 3x3 layers with stride      of 2 instead. Thr network utilized 159,552 params and achieved an accuracy of 84.94% in 150 epochs.
+   
+9. [Advanced Training]
+   
+   Here i was introduced to ResNet18 and CIFAR dataset with aim to get 85% test accuracy.
