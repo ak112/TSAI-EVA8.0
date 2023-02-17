@@ -35,19 +35,13 @@
         6. FC Layer 
 
         7. SoftMax
-
+        
 2. Uses One Cycle Policy such that:
-
     1. Total Epochs = 24
-
     2. Max at Epoch = 5
-
     3. LRMIN = FIND
-
     4. LRMAX = FIND
-
     5. NO Annihilation
-    
 3. Uses this transform -RandomCrop 32, 32 (after padding of 4) >> FlipLR >> Followed by CutOut(8, 8)
 4. Batch size = 512
 5. Target Accuracy: 90% **(93.8% quadruple scores)**. 
