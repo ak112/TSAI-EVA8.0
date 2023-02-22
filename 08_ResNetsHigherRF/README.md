@@ -68,7 +68,7 @@ The One Cycle Policy is a learning rate scheduling technique that has been shown
 
 ### LR Finder Plot
 
-![LR Finder Plot](./plots/LR_Finder.png)
+![LR Finder Plot](./plots/LR_finder.png)
 
 ### Model Training and Results
 
