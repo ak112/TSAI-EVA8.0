@@ -75,4 +75,4 @@ The One Cycle Policy is a learning rate scheduling technique that has been shown
 The model was trained using the above architecture on Cifar10 for 24 epochs. The best train and test accuracy achieved is and respecitively.
 
 **Loss Curves**
-
+![loss_graph](./plots/Loss_curves.png)
