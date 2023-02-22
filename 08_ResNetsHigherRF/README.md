@@ -67,7 +67,7 @@ The One Cycle Policy is a learning rate scheduling technique that has been shown
 * Easy to implement: The One Cycle Policy is easy to implement and does not require any additional hyperparameters or complex optimization algorithms. The policy can be applied to any neural network and can be used in conjunction with other optimization techniques, such as weight decay and momentum.
 
 
-![LR Finder Plot](./plots/LR_Finder.png)
+![LR Finder Plot](./plots/LR_finder.png)
 
 ### Model Training and Results
 
