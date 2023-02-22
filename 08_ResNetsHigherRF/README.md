@@ -59,13 +59,16 @@ The essence of the learning rate policy comes from the observation that increasi
 
 ### One Cycle policy
 
-Similar to Cyclic Learning Rate, but here we have only one Cycle. The correct combination of momemtum, weight decay, Learning rate, batch size does magic. One Cycle Policy will not increase accuracy, but the reasons to use it are:
+The One Cycle Policy is a learning rate scheduling technique that has been shown to improve the training of deep neural networks. It was introduced by Leslie Smith in 2018 and is based on the idea of training the network using a cyclical learning rate, where the learning rate starts at a low value, increases to a maximum value, and then decreases back to the initial low value.
 
-* It reduces the time it takes to reach "near" to your accuracy.
-* It allows us to know if we are going right early on.
-* It let us know what kind of accuracies we can target with given model.
-* It reduces the cost of training.
-* It reduces the time to deploy.
+* Faster training: The One Cycle Policy can help to speed up training by allowing the network to converge faster. By starting with a low learning rate, the network is able to make more gradual changes to the weights, which can help to avoid getting stuck in local minima. Increasing the learning rate later in the training process can help the network to make larger updates to the weights and explore more of the weight space.
+* Better generalization: The One Cycle Policy has been shown to improve the generalization of the trained model. By training the network with a cyclical learning rate, the network is forced to explore a larger portion of the weight space, which can help to find better minima that generalize better to new data.
+* Regularization: The One Cycle Policy can act as a form of regularization by adding noise to the optimization process. By varying the learning rate, the network is forced to make small changes to the weights, which can help to reduce overfitting.
+* Easy to implement: The One Cycle Policy is easy to implement and does not require any additional hyperparameters or complex optimization algorithms. The policy can be applied to any neural network and can be used in conjunction with other optimization techniques, such as weight decay and momentum.
+
+### LR Finder Plot
+
+
 
 ### Model Training and Results
 
