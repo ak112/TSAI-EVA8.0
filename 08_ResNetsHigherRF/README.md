@@ -50,3 +50,26 @@
 
 
 ## Solution
+
+The network starts with a prep_layer that takes a 3-channel image as input and applies a 64-channel convolutional layer, followed by batch normalization and ReLU activation. The output of the prep_layer is passed to the first layer, which applies a 128-channel convolutional layer, followed by max pooling, batch normalization, and ReLU activation. The output is then passed to a ResBlock, which applies two 3x3 convolutional layers, each followed by batch normalization and ReLU activation, and adds the input to the output before applying another ReLU activation.The output of the ResBlock is passed to the second layer, which applies a 256-channel convolutional layer, followed by max pooling, batch normalization, and ReLU activation. The output of the second layer is passed to the third layer, which applies a 512-channel convolutional layer, followed by max pooling, batch normalization, ReLU activation, and another ResBlock.The output of the final ResBlock is passed to a max pooling layer with a kernel size of 4, and then to a fully connected layer with 512 input features and 10 output features, which corresponds to the number of classes in the classification task. The final output is passed through a log softmax function to produce the predicted class probabilities.
+
+### Cyclic Learning Rate
+
+The essence of the learning rate policy comes from the observation that increasing the LR might have a short term negative effect and yet achieve a longer-term beneficial effect. This observation leads to the idea of letting the LR vary within a range of values rather than adopting a stepwise fixed or exponentially decreasing value.
+
+### One Cycle policy
+
+Similar to Cyclic Learning Rate, but here we have only one Cycle. The correct combination of momemtum, weight decay, Learning rate, batch size does magic. One Cycle Policy will not increase accuracy, but the reasons to use it are:
+
+* It reduces the time it takes to reach "near" to your accuracy.
+* It allows us to know if we are going right early on.
+* It let us know what kind of accuracies we can target with given model.
+* It reduces the cost of training.
+* It reduces the time to deploy.
+
+### Model Training and Results
+
+The model was trained using the above architecture on Cifar10 for 24 epochs. The best train and test accuracy achieved is and respecitively.
+
+**Loss Curves**
+
