@@ -33,3 +33,18 @@ The input images are 3-channel images, and the first three layers are convolutio
 
 The UltimusBlock module is a self-attention mechanism that takes a tensor of shape (batch_size, num_channels) as input and produces an output tensor of the same shape. The module is composed of three linear transformations, K, Q, and V, each with a dimensionality of 8. The dot product of Q and K is used to compute the attention weights, which are then used to weigh the values V to obtain the final output. Four instances of UltimusBlock are stacked together in the architecture to capture increasingly complex relationships between the features. The final output of the last UltimusBlock is flattened and fed into a linear layer with 10 output units, which produces the logits for the 10-class classification problem.
 
+### LR Finder Plot
+
+![LR Finder Plot](./plots/LR_Finder.png)
+
+### Model Training and Results
+
+The model was trained using the above architecture on Cifar10 for 24 epochs. The best train and test accuracy achieved is ~ 10%.
+
+**Loss Curves**
+![loss_graph](./plots/loss_curve.png)
+
+
+**Observations**
+1. Both train and test accuracy is stuck at 10%.
+2. Better use of One CycleLR policy can increase the accuracy to about ~50%.
