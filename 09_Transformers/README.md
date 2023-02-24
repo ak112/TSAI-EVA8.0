@@ -42,7 +42,7 @@ The UltimusBlock module is a self-attention mechanism that takes a tensor of sha
 The model was trained using the above architecture on Cifar10 for 24 epochs. The best train and test accuracy achieved is ~ 10%.
 
 **Loss Curves**
-![loss_graph](./plots/loss_curve.png)
+![loss_graph](https://github.com/ak112/TSAI-EVA8.0/blob/master/09_Transformers/plots/loss_curve.png)
 
 
 **Observations**
