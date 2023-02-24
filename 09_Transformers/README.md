@@ -35,7 +35,7 @@ The UltimusBlock module is a self-attention mechanism that takes a tensor of sha
 
 ### LR Finder Plot
 
-![LR Finder Plot](./plots/LR_Finder.png)
+![LR Finder Plot](https://github.com/ak112/TSAI-EVA8.0/tree/master/09_Transformers/plots)
 
 ### Model Training and Results
 
