@@ -29,3 +29,7 @@ This contains the solutions to the assignments given in The School of AI - Exten
 9. [Advanced Training](https://github.com/ak112/TSAI-EVA8.0/blob/master/07_AdvancedTraining/README.md)
    
    Here i was introduced to ResNet18 and CIFAR dataset with aim to get 85% test accuracy.
+
+10. [ResNets and Higher Receptive Fields](https://github.com/ak112/TSAI-EVA8.0/blob/master/08_ResNetsHigherRF/README.md)
+
+    A custom architecture was implemented here, along with that I used OneCycleLR to improve the convergence of the neural network. The network acheived an accuracy of     91.25% in 24 epochs.
