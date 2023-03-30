@@ -66,9 +66,9 @@ This part involved training YoloV3 on custom data.
 
 **Cybertruck**
 
-| ![Image1](./images/test_cybertruck_1.jpg) | ![Image2](./images/test_cybertruck_2.jpg) |
+| ![Image1](./images/test_cyber_1.jpg) | ![Image2](./images/test_cyber_2.jpg) |
 |------------------------|------------------------|
-| ![Image3](./images/test_cybertruck_3.jpg) | ![Image4](./images/test_cybertruck_4.jpg) |
+| ![Image3](./images/test_cyber_3.jpg) | ![Image4](./images/test_cyber_4.jpg) |
 
 **Oggy** 
 
