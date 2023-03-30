@@ -60,6 +60,24 @@ This part involved training YoloV3 on custom data.
 
 **MrBean** 
 
-| ![Image1](./images/hiccup1.jpeg) | ![Image2](./images/hiccup2.jpeg) |
+| ![Image1](./images/test_bean_1.jpg) | ![Image2](./images/test_bean_2.jpg) |
 |------------------------|------------------------|
-| ![Image3](./images/hiccup3.jpeg) | ![Image4](./images/hiccup4.jpeg) |
+| ![Image3](./images/test_bean_3.jpg) | ![Image4](./images/test_bean_4.jpg) |
+
+**Cybertruck**
+
+| ![Image1](./images/test_cybertruck_1.jpg) | ![Image2](./images/test_cybertruck_2.jpg) |
+|------------------------|------------------------|
+| ![Image3](./images/test_cybertruck_3.jpg) | ![Image4](./images/test_cybertruck_4.jpg) |
+
+**Oggy** 
+
+| ![Image1](./images/test_oggy_1.jpg) | ![Image2](./images/test_oggy_2.jpg) |
+|------------------------|------------------------|
+| ![Image3](./images/test_oggy_3.jpg) | ![Image4](./images/test_oggy_4.jpg) |
+
+**Cockroach** 
+
+| ![Image1](./images/test_roach_1.jpg) | ![Image2](./images/test_roach_2.jpg) |
+|------------------------|------------------------|
+| ![Image3](./images/test_roach_3.jpg) | ![Image4](./images/test_roach_4.jpg) |
