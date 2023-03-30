@@ -56,4 +56,4 @@ This part involved training YoloV3 on custom data.
 
 * Link to Colab: [Custom Yolo](https://github.com/ak112/TSAI-EVA8.0/blob/master/12_ObjectLocalisation/12_Session_Custom_YOLOV3.ipynb)
 
-* Result of model on test images
+* Result of model on test image
