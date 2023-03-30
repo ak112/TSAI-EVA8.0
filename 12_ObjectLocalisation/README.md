@@ -31,11 +31,29 @@
 3. Bonus: [YoloV4 Training on Colab!](https://colab.research.google.com/drive/1b08y_nUYv5UtDY211NFfINY7Hy_pgZDt#scrollTo=1YW7jPF1BOAw). 
 
 
-## Solution - Part 1, OpenCV Yolo
+## Solution - Part1- OpenCV Yolo
 This part of the assignment was more about how to use YOLO with Opencv. This is the best approach for beginners, to get quickly the algorithm working without doing complex installations.
 
--Link to Colab: [OpenCV Yolo](https://github.com/ak112/TSAI-EVA8.0/blob/master/12_ObjectLocalisation/12_Session_OpenCV.ipynb)
+* Link to Colab: [OpenCV Yolo](https://github.com/ak112/TSAI-EVA8.0/blob/master/12_ObjectLocalisation/12_Session_OpenCV.ipynb)
 
--Annotated Image Yolo
+* Annotated Image Yolo
 
 ![self](https://github.com/ak112/TSAI-EVA8.0/blob/master/12_ObjectLocalisation/images/self_image_annotated.png)
+
+
+## Part2- Training YoloV3 on Custom Data
+This part involved training YoloV3 on custom data.
+
+1.The first step in the process of customizing YOLOv3 for object detection on a custom dataset is to collect and curate the required data. This involves gathering images that contain the objects of interest MrBean, Cybertruck, Oggy, Cockroach and ensuring that the images are of high quality and diverse enough to represent different angles, lighting conditions, and backgrounds.
+
+2. Once the data is collected, it was annotated using appropriate VGG annotation tool to mark the location and class of the objects of interest. The annotations need to be in a format that matches the YOLOv3 requirements, typically in the form of bounding boxes with class labels associated with each object.
+
+3. After the data is annotated, the next step was customize the YOLO configuration file and dataset files to accommodate the custom dataset. This involves modifying the configuration file to adjust the number of classes and filters, updating the class names and train.txt files, and making any other necessary adjustments to the hyperparameters to suit the new dataset.
+
+4. The last layer of the YOLOv3 architecture needs to be modified to match the number of custom classes in the dataset, which in this case is four. The second last layer's filters need to be updated using the formula 3 * (4 + number of classes (4) + 1) = 27. This ensures that the network is optimized for the new dataset.
+
+5. Finally, the model was trained on the custom dataset using PyTorch. The training process involves initializing the network with pre-trained weights from the COCO dataset and then fine-tuning the model on the custom dataset. The resulting customized object detection model was used to detect the objects of interest in test image and video
+
+* Link to Colab: [Custom Yolo](https://github.com/ak112/TSAI-EVA8.0/blob/master/12_ObjectLocalisation/12_Session_Custom_YOLOV3.ipynb)
+
+* Result of model on test images
