@@ -32,3 +32,8 @@
 
 
 ## Solution - Part 1, OpenCV Yolo
+This part of the assignment was more about how to use YOLO with Opencv. This is the best approach for beginners, to get quickly the algorithm working without doing complex installations.
+
+-Link to Colab: [OpenCV Yolo] [./12_Session_OpenCV.ipynb]
+-Annotated Image Yolo
+![self](./images/self_image_annotated.png)
