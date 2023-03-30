@@ -81,3 +81,5 @@ This part involved training YoloV3 on custom data.
 | ![Image1](./images/test_roach_1.jpg) | ![Image2](./images/test_roach_2.jpg) |
 |------------------------|------------------------|
 | ![Image3](./images/test_roach_3.jpg) | ![Image4](./images/test_roach_4.jpg) |
+
+* Link to Youtube Video [Cybertruck Object Detection](https://youtu.be/oGUs2zk_z1w)
