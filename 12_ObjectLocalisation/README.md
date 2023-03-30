@@ -29,3 +29,6 @@
     8. Share the link to the readme file where we can find the result of your model on YOUR 16 images. - 500 pts. 
 
 3. Bonus: [YoloV4 Training on Colab!](https://colab.research.google.com/drive/1b08y_nUYv5UtDY211NFfINY7Hy_pgZDt#scrollTo=1YW7jPF1BOAw). 
+
+
+## Solution - Part 1, OpenCV Yolo
